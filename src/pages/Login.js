@@ -31,8 +31,8 @@ const Login = ({loginUser}) => {
                     }}
                     validationSchema={
                         Yup.object({
-                            email: Yup.string().email("ENDEREÇO INCORRETO DE E-MAIL").required("CAMPO OBRIGATÓRIO"),
-                            password: Yup.string().min(8, "SENHA MUITO CURTA").max(30, "SENHA MUITO LONGA").required("CAMPO OBRIGATÓRIO"),
+                            email: Yup.string().email("INCORRECT EMAIL ADDRESSL").required("REQUIRED"),
+                            password: Yup.string().min(8, "PASSWORD TOO SHORT").max(30, "PASSWORD TOO LONG").required("REQUIRED"),
                         })
                     }
                     onSubmit={(values, {setSubmitting, setFieldError}) => {
