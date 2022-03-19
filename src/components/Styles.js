@@ -77,7 +77,7 @@ export const ButtonGroup = styled.div`
 //Campo de entrada de dados (Input Field)
 export const StyledTextInput = styled.input`
     width: 300px;
-    padding: 15px 50px 10px 50px;
+    padding: 15px 15px 10px 50px;
     font-size: 17px;
     letter-spacing: 1px;
     color: ${colors.dark1};
