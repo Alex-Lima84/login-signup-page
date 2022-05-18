@@ -36,7 +36,7 @@ const Signup = ({signupUser}) => {
                     }}
                     validationSchema={
                         Yup.object({
-                            email: Yup.string().email("INCORRECT EMAIL ADDRESS").required("CAMPO OBRIGATÓRIO"),
+                            email: Yup.string().email("INCORRECT EMAIL ADDRESS").required("REQUIRED"),
                             password: Yup.string().min(8, "PASSWORD TOO SHORT").max(30, "PASSWORD TOO LONG").required("REQUIRED"),
                             name: Yup.string().required("REQUIRED"),
                             dateOfBirth: Yup.date().required("REQUIRED"),
